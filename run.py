@@ -85,7 +85,7 @@ def logout_reset_app_info():
     global_game_reset()
 
 def sort_current_riddle(data):
-    ''' Sort the data so that it is always id, source, answer '''
+    
     ordered_data = [0,0,0]
     for cr in data:   # Select a riddle
         if cr[0] == "id":
@@ -97,7 +97,7 @@ def sort_current_riddle(data):
     return ordered_data
     
 def json_tuple_helper_function(obj):
-    """ I added marked tuples with __istuple__ in the json """
+    
     if 'istuple' in obj:
         return tuple(obj['item'])
     else:
