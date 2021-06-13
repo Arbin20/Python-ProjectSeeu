@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css?family=Averia+Serif+Libre:400,700|Bubblegum+Sans|Gloria+Hallelujah');
+
+body {
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 46px;
+}
+
+header h2 {
+    font-family: 'Bubblegum Sans', cursive;
+}
+
+
+.min-height-main {
+    min-height: 460px;
+}
+
+.min-height-footer {
+    min-height: 30px;
+}
+
+
+/*Registration Login*/
+/*.img-container{*/
+/*    position:relative;*/
+/*    width:*/
+/*}*/
+
+.align-right {
+    position: fixed;
+    right: 100px;
+     /*top: 54px; */
+    top: 10px;
+    z-index: 20;
+}
+.form-username {
+    width: 200px;
+}
+.form-align {
+    display: inline;
+}
+
+.login {
+    margin-right: 80px;
+}
+
+
+/*Transition only comes into play if someone resizes the browser window.*/
+.logo {
+     transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    padding: 50px; 
+    position: relative;
+    margin: 0px;
+}
+
+.logo img {
+    margin: 0px auto;
+    display: block;
+    width: 100%;
+    display: none;
+}
+
+.nav {
+    margin-right: 50px;
+}
+
+.navbar {
+    position: fixed;
+    right: 0;
+    top: 0px;
+    width: 100%;
+    z-index: 10;
+}
+
+.title {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.main {
+    background: #eaeaea;
+    padding: 20px;
+    border: 1px solid #d0d0d0;
+    border-radius: 20px;
+    margin:20px 5px;
+    box-shadow:  0 0 5px #e4f2d1, 0 0 15px #e8e8de;
+}
+
+/* Added subtle text shadows. Softens the text and makes it easier to read. */
+.main h3 {
+    font-family: 'Bubblegum Sans', cursive;
+    text-shadow: 0 0 1px #c1c193;
+}
+.main p {
+    text-shadow: 0 0 1px #d0d0b6;
+}
+
+.main a {
+    decoration: none;
+    color: #333;
+}
+
+.main a:hover {
+    decoration: none;
+    color: #c16565;
+}
+
+.registration {
+    /*position: relative;*/
+    /*right: 100px;*/
+     /*top: 54px; */
+    /*top: 10px;*/
+    /*z-index: 20;*/
+}
+.red {
+    color: red;
+}
+
+.btn-width {
+    width: 400px;
+}
+.btn-deactivated {
+    color: grey;
+}
+
+.btn-hide {
+    display: none;
+    background-color: blue;
+}
+
+.list_games {
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #000000, 0 0 10px #f17474, 2px 2px #eababa, -2px -2px #d4a144;
+}
+
+.start_game {
+    margin-top: 20px;
+}
+.play_btn {
+    width: 100%;
+    background: #ff0ed6;
+    border-radius: 20px;
+}
+.play_btn:hover {
+    box-shadow: 0 0 20px yellow;
+    background: #d4ffae;
+}
+.play_btn:active, .play_btn:focus {
+    box-shadow: 0 0 40px blue;
+    background: #b093f7;
+    color: #d4ffae;
+}
+
+.game_title {
+    
+}
+
+/*.position_inline {*/
+/*    display: inline;*/
+/*}*/
+
+.game_text {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.game_image img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.game_instruction {
+    font-size: 1.6em;
+}
+.text-area {
+    height: 400px;
+}
+
+.red {
+    color: red;
+}
+.yellow-bg {
+    background: yellow;
+}
+.bottom-1 {
+    margin-top: 200px;
+}
+.bottom-2 {
+    margin-top: 150px;
+}
+.bottom-3 {
+    margin-top: 125px;
+}
+.bottom-4 {
+    margin-top: 100px;
+}
+
+.btn-answer-width, .btn-pass-width {
+    width: 49%;
+    margin: 0;
+    
+}
+
+
+footer {
+    background-color: #eaeaea;
+    box-shadow:  0 0 5px #e4f2d1, 0 0 15px #e8e8de;
+    min-height: 75px;
+    margin: 0;
+    border-top: 1px solid #d0d0d0;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.links {
+    text-align: center;
+}
+
+.social-links {
+    padding-bottom: 15px;
+}
+
+.social-links a {
+    color: #333;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links a:hover {
+    color: #c1c1c1;
+    text-decoration: none;
+    text-shadow: 0 0 1px #bdbd9b;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i {
+    width: 32px;
+    height: 35px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    background-color: #8f8f8f;
+    border-bottom: 3px solid #e84610;
+}
+
+.social-links li a i:hover {
+    background-color: #e84610;
+    border-color: #fafafa;
+    color: #333;
+}
+
+
+
+
+
+@media only screen and (min-width: 520px){
+    h1 {
+        font-size: 68px;
+    }
+
+    .links {
+        /*border-top: 1px solid #d0d0d0;*/
+        /* padding-top: 20px;
+        text-align: center; */
+    }
+    
+}
+
+@media only screen and (min-width: 770px){
+    .main {
+        margin:20px auto;
+    }
+
+    .navbar {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        z-index:10;
+    }
+    .align-right {
+        right: 10px;
+    }
+    /*.restrict-size {*/
+    /*    width: 80vw;*/
+    /*    overflow: hidden;*/
+    /*}*/
+    .social-links {
+        padding-bottom: 0px;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    h1 {
+        font-size: 50px;
+    }
+    
+    .navbar {
+        position: relative;
+        left: 100%;
+        top: 220px;
+        width: 300%;
+        /* z-index: 0; */
+        
+    }
+    
+    /*.restrict-size {*/
+        /*width: 600px;*/
+    /*    overflow: hidden;*/
+    /*}*/
+    
+    .min-height-header {
+        min-height: 250px;
+    }
+    
+    .align-right {
+        right: 10px;
+        top: 130px;
+    }
+
+    .logo {
+        min-height: 200px;
+         transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+         padding: 0px; 
+    }
+    
+    .logo img {
+        margin: 20px auto;
+        max-height: 200px;
+        width: 80%;
+        display: block;
+    }
+
+    .title {
+        margin-top: 0px;
+        padding-left: 50px;
+        text-align: left;
+    }
+    .start_game {
+        margin-top: 10%;
+    }
+}

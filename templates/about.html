@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="row">
+        <p>User: {{ app_info["username"] }}</p>
+        <p>All users: {{ app_info["allusers"] }}</p>
+        <p>Logged: {{ app_info["logged"] }}</p>
+        <div class="col-md-12 main min-height-main">
+            <h3>About</h3>
+            <p>Free game to play.</p>
+            <p>You just need to log in to play the game.</p>
+        </div>
+    </div>
+{% endblock %}
+        

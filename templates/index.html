@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="row">
+
+        {% for message in get_flashed_messages() %}
+            {{ message }}
+        {% endfor %}
+        <div class="col-md-12 main min-height-main">
+            <h3>Description</h3>
+            <p>This is a project that I am building for the Python Programming Course.</p>
+            
+            <p>The purpose of the game is to find the name of the country from the image. On the image its appear the flag of the country</p>
+
+            <p>Country name can be with 1 word or 2 words meaning:  Name1 Name2 (South Korea), or just Name1 (China)</p>
+
+            <h3>Instructions</h3>
+            <p>First you need to register if you have not already done so.</p>
+            <p>If you have already registered, use your username to login. Your username is unique and its 
+            sole purpose is to keep track of the games you played and the points you gained. The user name 
+            can be any set of letters.<br>5
+            Once you log in you will be taken to your user page. There you can see a list of games played
+            and the points gained. You can start a new game from this page.</p>
+
+        </div>
+    </div>
+{% endblock %}
