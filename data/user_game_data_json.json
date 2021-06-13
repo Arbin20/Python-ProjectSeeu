@@ -1,112 +1,112 @@
 {
     "arbin98": {
-        "date_best_game": "13/06/2021", 
+        "date_best_game": "13/06/2021",
         "games_played": [
             [
-                "13/06/2021", 
+                "13/06/2021",
                 100
-            ], 
+            ],
             [
-                "13/06/2021", 
+                "13/06/2021",
                 96
-            ], 
+            ],
             [
-                "12/06/2021", 
+                "12/06/2021",
                 82
-            ], 
+            ],
             [
-                "26/05/2021", 
+                "26/05/2021",
                 58
             ]
-        ], 
-        "number_of_games": 9, 
-        "points_best_game": 100, 
-        "total_user_points": 336, 
+        ],
+        "number_of_games": 9,
+        "points_best_game": 100,
+        "total_user_points": 336,
         "user": "arbin98"
-    }, 
+    },
     "python": {
-        "date_best_game": "13/06/2021", 
+        "date_best_game": "13/06/2021",
         "games_played": [
             [
-                "13/06/2021", 
+                "13/06/2021",
                 88
             ]
-        ], 
-        "number_of_games": 1, 
-        "points_best_game": 88, 
-        "total_user_points": 88, 
+        ],
+        "number_of_games": 1,
+        "points_best_game": 88,
+        "total_user_points": 88,
         "user": "python"
-    }, 
+    },
     "shqip": {
-        "date_best_game": "", 
+        "date_best_game": "",
         "games_played": [
             [
-                "26/05/2021", 
+                "26/05/2021",
                 0
-            ], 
+            ],
             [
-                "26/05/2021", 
+                "26/05/2021",
                 0
-            ], 
+            ],
             [
-                "26/05/2021", 
+                "26/05/2021",
                 0
             ]
-        ], 
-        "number_of_games": 3, 
-        "points_best_game": 0, 
-        "total_user_points": 0, 
+        ],
+        "number_of_games": 3,
+        "points_best_game": 0,
+        "total_user_points": 0,
         "user": "shqip"
-    }, 
+    },
     "test_user": {
-        "date_best_game": "26/05/2021", 
+        "date_best_game": "13/06/2021",
         "games_played": [
             [
-                "26/05/2021", 
+                "13/06/2021",
                 30
             ]
-        ], 
-        "number_of_games": 6, 
-        "points_best_game": 30, 
-        "total_user_points": 80, 
+        ],
+        "number_of_games": 6,
+        "points_best_game": 30,
+        "total_user_points": 80,
         "user": "test_user"
-    }, 
+    },
     "user1": {
-        "date_best_game": "10/04/2021", 
+        "date_best_game": "10/04/2021",
         "games_played": [
             [
-                "10/04/2021", 
+                "10/04/2021",
                 100
-            ], 
+            ],
             [
-                "08/04/2021", 
+                "08/04/2021",
                 32
-            ], 
+            ],
             [
-                "07/04/2021", 
+                "07/04/2021",
                 18
-            ], 
+            ],
             [
-                "07/04/2021", 
+                "07/04/2021",
                 16
             ]
-        ], 
-        "number_of_games": 4, 
-        "points_best_game": 100, 
-        "total_user_points": 166, 
+        ],
+        "number_of_games": 4,
+        "points_best_game": 100,
+        "total_user_points": 166,
         "user": "user1"
-    }, 
+    },
     "user2": {
-        "date_best_game": "07/04/2021", 
+        "date_best_game": "07/04/2021",
         "games_played": [
             [
-                "07/04/2021", 
+                "07/04/2021",
                 32
             ]
-        ], 
-        "number_of_games": 1, 
-        "points_best_game": 32, 
-        "total_user_points": 32, 
+        ],
+        "number_of_games": 1,
+        "points_best_game": 32,
+        "total_user_points": 32,
         "user": "user2"
     }
 }
