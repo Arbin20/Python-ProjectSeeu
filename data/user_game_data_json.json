@@ -2,7 +2,6 @@
     "arbin98": {
         "date_best_game": "13/06/2021", 
         "games_played": [
-
             [
                 "13/06/2021", 
                 100
@@ -24,6 +23,19 @@
         "points_best_game": 100, 
         "total_user_points": 336, 
         "user": "arbin98"
+    }, 
+    "python": {
+        "date_best_game": "13/06/2021", 
+        "games_played": [
+            [
+                "13/06/2021", 
+                88
+            ]
+        ], 
+        "number_of_games": 1, 
+        "points_best_game": 88, 
+        "total_user_points": 88, 
+        "user": "python"
     }, 
     "shqip": {
         "date_best_game": "", 
