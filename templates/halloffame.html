@@ -1,78 +1,75 @@
-{% extends 'base.html' %}
-{% block content %}
-    <div class="row main">
+{% extends 'base.html' %} {% block content %}
+<div class="row main">
 
-        <div class="row">
-            <div class="col-md-6">
-                <h3>Leaderboard</h3>
-                <p>Find the correct name of the Country and rank in the first place.</p>
-            </div>
-            
-            {% if app_info["logged"] %}
-                <div class="col-md-6">
-                    <h3>Welcome {{ app_info["username"] }}</h3>
-                </div>
-            {% endif %}
-            {% if not app_info["logged"] %}
-                <div class="col-md-6">
-                    <p><br></p>
-                    <p>Log in if you would like to play</p>
-                    <p>Registration is free.</p>
-                </div>
-            {% endif %}
-            
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Leaderboards</h3>
+            <p>Find the correct name of the Country and rank in the first place.</p>
         </div>
-        <div class="col-md-6  min-height-main">
-            <h3>Individual Games</h3>
-            <div class="list_games table-responsive">
-                <table class="table table-condensed table-striped table-bordered">
-                    <thead class="thead-dark">
-                        <tr>
-                            <th scope="col">Rank</td>
-                            <th scope="col">Date</td>
-                            <th scope="col">User</td>
-                            <th scope="col">Points</td>
-                        </tr>
-                        <tbody>
-                            {% for item in best_individual_games %}
-                                <tr>
-                                    <th scope="row">{{ item[0] }}</td>
-                                    <td>{{ item[1] }}</td>
-                                    <td>{{ item[2] }}</td>
-                                    <td>{{ item[3] }}</td>
-                                </tr>
-                            {% endfor %}
-                        </tbody>
-                    </thead>
-                </table>
-            </div>
+
+        {% if app_info["logged"] %}
+        <div class="col-md-6">
+            <h3>Welcome {{ app_info["username"] }}</h3>
         </div>
-        <!-- Will be needed in the pages which split in two columns -->
-        <div class="col-md-6 min-height-main">
-            <h3>All Games Played - Rank according to total points</h3>
-            <div class="list_games table-responsive">
-                <table class="table table-condensed table-striped table-bordered">
-                    <thead class="thead-dark">
-                        <tr>
-                            <th scope="col">Rank</td>
-                            <th scope="col">User</td>
-                            <th scope="col">Points</td>
-                            <th scope="col">Games Played</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                            {% for item in best_all_games %}
-                                <tr>
-                                    <th scope="row">{{ item[0] }}</td>
-                                    <td>{{ item[1] }}</td>
-                                    <td>{{ item[2] }}</td>
-                                    <td>{{ item[3] }}</td>
-                                </tr>
-                            {% endfor %}
-                        </tbody>
-                </table>
-            </div>
-        </div> 
+        {% endif %} {% if not app_info["logged"] %}
+        <div class="col-md-6">
+            <p><br></p>
+            <p>Log in if you would like to play</p>
+            <p>Registration is free.</p>
+        </div>
+        {% endif %}
 
     </div>
+    <div class="col-md-6  min-height-main">
+        <h3>Individual Games</h3>
+        <div class="list_games table-responsive">
+            <table class="table table-condensed table-striped table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Rank</td>
+                            <th scope="col">Date</td>
+                                <th scope="col">User</td>
+                                    <th scope="col">Points</td>
+                    </tr>
+                    <tbody>
+                        {% for item in best_individual_games %}
+                        <tr>
+                            <th scope="row">{{ item[0] }}</td>
+                                <td>{{ item[1] }}</td>
+                                <td>{{ item[2] }}</td>
+                                <td>{{ item[3] }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <div class="col-md-6 min-height-main">
+        <h3>All Games Played - Rank according to total points</h3>
+        <div class="list_games table-responsive">
+            <table class="table table-condensed table-striped table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Rank</td>
+                            <th scope="col">User</td>
+                                <th scope="col">Points</td>
+                                    <th scope="col">Games Played</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in best_all_games %}
+                    <tr>
+                        <th scope="row">{{ item[0] }}</td>
+                            <td>{{ item[1] }}</td>
+                            <td>{{ item[2] }}</td>
+                            <td>{{ item[3] }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
 {% endblock %}
