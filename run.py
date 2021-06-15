@@ -4,7 +4,7 @@ import ast
 import random
 import datetime
 from flask import Flask, render_template, request, redirect, url_for, session, flash
-from functools import wraps  #decorators for requires login
+from functools import wraps  
 
 app = Flask(__name__)
 
