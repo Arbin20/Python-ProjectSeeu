@@ -1,4 +1,17 @@
 {
+    "adhurim": {
+        "date_best_game": "15/06/2021",
+        "games_played": [
+            [
+                "15/06/2021",
+                96
+            ]
+        ],
+        "number_of_games": 1,
+        "points_best_game": 96,
+        "total_user_points": 96,
+        "user": "adhurim"
+    },
     "arbin98": {
         "date_best_game": "13/06/2021",
         "games_played": [
@@ -32,13 +45,17 @@
         "date_best_game": "13/06/2021",
         "games_played": [
             [
+                "15/06/2021",
+                88
+            ],
+            [
                 "13/06/2021",
                 88
             ]
         ],
-        "number_of_games": 1,
+        "number_of_games": 2,
         "points_best_game": 88,
-        "total_user_points": 88,
+        "total_user_points": 176,
         "user": "python"
     },
     "shqip": {
