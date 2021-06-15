@@ -3,6 +3,10 @@
         "date_best_game": "13/06/2021",
         "games_played": [
             [
+                "14/06/2021",
+                90
+            ],
+            [
                 "13/06/2021",
                 100
             ],
@@ -19,9 +23,9 @@
                 58
             ]
         ],
-        "number_of_games": 9,
+        "number_of_games": 10,
         "points_best_game": 100,
-        "total_user_points": 336,
+        "total_user_points": 426,
         "user": "arbin98"
     },
     "python": {

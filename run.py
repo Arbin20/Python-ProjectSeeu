@@ -13,31 +13,30 @@ app_info = {
     "logged": False,
     "username": "",
     "allusers": "",
-    "register": "",         # ???
-    "check_active": "",     # Pass class for check button
-    "register_active": "",  # Pass class for register button
-    "route": "",            # Which is the current page
-    "game": False           # Is there a current game active True/False
+    "register": "",         
+    "check_active": "",     
+    "register_active": "",  
+    "route": "",            
+    "game": False           
 }
 
-best_individual_games = []  # For Hall of Fame
-current_game = []           # 
+best_individual_games = []  
+current_game = []            
 current_riddle = 0
-all_riddles = []            # All riddles available for the game
+all_riddles = []            
 riddle_counter = 0
-attempt = 1                 # There are three attempts per riddle.
+attempt = 1                 
 points = 10
 gained_points = 0
-wrong_answers =[]           # This will hold wrong answers
-answer = ""                 # Current answer of current riddle
-user_data = ""               # Data related to current logged in user
+wrong_answers =[]           
+answer = ""                 
+user_data = ""              
 
 
 def add(x,y):           #This is a testing function -- Will be removed at that end.
     """Add Function"""
     return x + y
 
-# login required decorator -- from a tutorial and adapted
 def login_required(f):
     @wraps(f)
     def wrap(*args, **kwargs):
