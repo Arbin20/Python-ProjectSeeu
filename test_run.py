@@ -48,8 +48,8 @@ class TestFlaskRoutes(unittest.TestCase):
     def test_contact(self):
         """ Test routing for CONTACT page """
         tester = app.test_client(self)
-        response = tester.get('/contact', content_type='html/text')
-        self.assertEqual(response.status_code, 200)
+        response = tester.get('/contact3', content_type='html/text') 
+        self.assertEqual(response.status_code, 404)
         print("test_contact -- PASS")
 
     # INACTIVE
@@ -177,79 +177,7 @@ class TestFileReadAppend(unittest.TestCase):
         
         
 class TestOtherFunctions(unittest.TestCase):
-    '''
-    Test suite for run.py
-    Testing other Functions
-    '''
-    def test_add(self):
-        '''
-        test a testing add method to check that set up is ok
-        '''
-        answer = run.add(10, 3)
-        self.assertEqual(answer, 13, "Failed")
-        self.assertEqual(run.add(10, 3), 13, "Failed: add positive to positive")
-        self.assertEqual(run.add(0, 3), 3, "Failed: add 0 to positive")
-        self.assertEqual(run.add(0, -5), -5, "Failed: add 0 to negative")
-        self.assertEqual(run.add(-7, -5), -12, "Failed: add negative to negative")
-        self.assertEqual(run.add(7, -5), 2, "Failed: add positive to negative, positive answer")
-        self.assertEqual(run.add(7, -9), -2, "Failed: add positive to negative, negative answer")
-        self.assertEqual(run.add(0, 0), 0, "Failed: add 0 to 0")
-        print("test_add -- PASS")
-    
-    def test_global_game_reset(self):
-        """ Reset method """
-        run.current_game = ["Some Text"]
-        run.current_riddle = 100
-        run.all_riddles = ["This is some content"]
-        run.riddle_counter = 50
-        run.attempt = 1000
-        run.points = 20
-        run.gained_points = 30
-        run.wrong_answers =["This is a wrong answer"]
-        run.answer = "This is a good answer"      
-        run.global_game_reset()
-        self.assertEqual(run.current_game, [])
-        self.assertEqual(run.current_riddle, 0)
-        self.assertEqual(run.all_riddles, [])
-        self.assertEqual(run.riddle_counter, 0)
-        self.assertEqual(run.attempt, 1)
-        self.assertEqual(run.points, 10)
-        self.assertEqual(run.gained_points, 0)
-        self.assertEqual(run.wrong_answers, [])
-        self.assertEqual(run.answer, "")
-        print("test_global_game_reset -- PASS")
-    
-    def test_logout_reset_app_info(self):
-        """ Reset app_info on LOGOUT """
-        run.app_info["logged"] = True
-        run.app_info["username"] = "Logged in user"
-        run.app_info["allusers"] = "A lot of users"
-        run.app_info["game"] = True
-        run.logout_reset_app_info()
-        self.assertEqual(run.app_info["logged"], False)
-        self.assertEqual(run.app_info["username"], "You are now logged out")
-        self.assertEqual(run.app_info["allusers"], "")
-        self.assertEqual(run.app_info["game"], False)
-        print("test_logout_reset_app_info -- PASS")
-
-    def test_sort_current_riddle(self):
-        ''' Check the sorting of current riddle 
-            Check that the order of the output is always the same.'''
-        data1 = [('answer', 'text1'), ('source', 'file1.png'), ('id', 1)]
-        data2 = [('answer', 'text1'), ('id', 1), ('source', 'file1.png')]
-        data3 = [('source', 'file1.png'), ('answer', 'text1'), ('id', 1)]
-        data4 = [('source', 'file1.png'), ('id', 1), ('answer', 'text1')]
-        data5 = [('id', 1), ('answer', 'text1'), ('source', 'file1.png')]
-        data6 = [('id', 1), ('source', 'file1.png'), ('answer', 'text1')]
-        self.assertEqual(run.sort_current_riddle(data1), [1, 'file1.png', 'text1'])
-        self.assertEqual(run.sort_current_riddle(data2), [1, 'file1.png', 'text1'])
-        self.assertEqual(run.sort_current_riddle(data3), [1, 'file1.png', 'text1'])
-        self.assertEqual(run.sort_current_riddle(data4), [1, 'file1.png', 'text1'])
-        self.assertEqual(run.sort_current_riddle(data5), [1, 'file1.png', 'text1'])
-        self.assertEqual(run.sort_current_riddle(data6), [1, 'file1.png', 'text1'])
-        print("test_sort_current_riddle -- PASS")
-
-
+   
     def test_store_game_info(self):
         today = datetime.datetime.now().strftime("%d/%m/%Y")
         empty = {
