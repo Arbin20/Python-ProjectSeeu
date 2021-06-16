@@ -58,6 +58,19 @@
         "total_user_points": 176,
         "user": "python"
     },
+    "qazim": {
+        "date_best_game": "16/06/2021",
+        "games_played": [
+            [
+                "16/06/2021",
+                96
+            ]
+        ],
+        "number_of_games": 1,
+        "points_best_game": 96,
+        "total_user_points": 96,
+        "user": "qazim"
+    },
     "shqip": {
         "date_best_game": "",
         "games_played": [
